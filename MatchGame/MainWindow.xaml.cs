@@ -24,6 +24,8 @@ namespace MatchGame
         DispatcherTimer timer = new DispatcherTimer();
         int tenthsOfSecondsElapsed;
         int matchesFound;
+        TextBlock lastTextBlockClicked;
+        bool findingMatch = false;
 
         public MainWindow()
         {
@@ -77,9 +79,6 @@ namespace MatchGame
             tenthsOfSecondsElapsed = 0;
             matchesFound = 0;
         }
-        TextBlock lastTextBlockClicked;
-        bool findingMatch = false;
-
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TextBlock textBlock = sender as TextBlock;

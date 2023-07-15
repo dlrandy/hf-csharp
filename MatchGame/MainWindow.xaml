@@ -8,34 +8,34 @@
         Title="Find all of the matching animals" Height="450" Width="400">
     <Grid x:Name="mainGrid" Height="435" VerticalAlignment="Bottom" >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="60*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
-        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
-        <TextBlock Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
+        <TextBlock HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Column="1"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
+        <TextBlock Grid.Column="2"  Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
+        <TextBlock Grid.Column="3"  Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
+        <TextBlock HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="3" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
+        <TextBlock HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
         <TextBlock Grid.Column="3" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontStyle="Italic" FontWeight="Bold" Text="?"   MouseDown="TextBlock_MouseDown" />
-        <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="Elapsed time" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="36" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="4" MouseDown="TimeTextBlock_MouseDown"/>
+        <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Left" Grid.Row="7" TextWrapping="Wrap" Text="Elapsed time" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="4" MouseDown="TimeTextBlock_MouseDown" Margin="0,3,0,0" Grid.RowSpan="2"/>
     </Grid>
 </Window>
