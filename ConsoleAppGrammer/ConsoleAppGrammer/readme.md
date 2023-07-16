@@ -6,4 +6,8 @@ C#里创建项目的时候，会创建solution，solution是项目的容器，so
 
 namespace可以跨多个文件。class也可以跨多个文件，但是需要使用partial关键字。
 
-112
+// sln/csproj to executable
+dotnet publish -c Release -r win10-x64
+
+dotnet publish -c Release -r osx-x64
+

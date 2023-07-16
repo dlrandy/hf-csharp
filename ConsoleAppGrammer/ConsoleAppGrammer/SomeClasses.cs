@@ -12,10 +12,11 @@ namespace PetFiler2
         {
 
         }
-        public partial class Cat
-        {
-            public void Meow()
-            { }
-        }
+    }
+
+    public partial class Cat
+    {
+        public void Meow()
+        { }
     }
 }
