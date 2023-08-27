@@ -1,0 +1,25 @@
+﻿<Window x:Class="SwordDamageWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwordDamageWPF"
+        mc:Ignorable="d"
+        Title="Sword Damage" Height="175" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <CheckBox x:Name="flaming" Content="Flaming" Checked="flaming_Checked" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center" Unchecked="flaming_Unchecked" IsChecked="False"/>
+        <CheckBox x:Name="magic" Grid.Column="1" Content="Magic" HorizontalAlignment="Left" Margin="28,0,0,0" VerticalAlignment="Center" IsChecked="False" Checked="magic_Checked" Unchecked="magic_Unchecked"/>
+        <Button x:Name="RollForDamage" Content="Roll For Damage" HorizontalAlignment="Left" Margin="57,0,0,0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="187" Click="RollForDamage_Click"/>
+        <TextBlock x:Name="damage" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Damage" VerticalAlignment="Center" Width="159" Grid.ColumnSpan="2" Margin="62,0,0,0"/>
+
+    </Grid>
+</Window>
